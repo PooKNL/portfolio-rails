@@ -19,9 +19,12 @@ gem 'sass-rails', github: "rails/sass-rails"
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+gem 'jquery-rails'
 
 # Use Bootstrap for styling
 gem 'bootstrap-sass', '~> 3.3.6'
+# Use Devise for authentication
+gem 'devise', '~> 4.2'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
