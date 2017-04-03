@@ -100,4 +100,31 @@ p, ul, ol, {
   }
 }
 
+#main_footer {
+  padding: 2.5em 5%;
+  border-top: 1px solid $sunshine;
+  .copyright {
+    float: left;
+    font-size: .9em;
+    margin: 0;
+  }
+  nav {
+    float: right;
+    i {
+      color: $lavender;
+      margin-left: 1em;
+      padding-top: .2em;
+      &:hover{
+        color: $aqua;
+      }
+    }
+  }
+}
+
+#profile_pic {
+  margin: 0 0 1.5em 0;
+  border: solid;
+  border-color: $aqua;
+}
+
 @import "welcome";
