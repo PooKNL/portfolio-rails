@@ -1,2 +1,51 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "normalize";
+
+$aqua: #6BBAA7;
+$sunshine: #FBA100;
+$lavender: #6C648B;
+$dustyrose: #B6A19E;
+
+body {
+  background-color: white;
+  font-family: sans-serif;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+#main_navigation {
+  padding: 1.5em 5%;
+  font-family: 'Archivo Black', sans-serif;
+  border-bottom: 1px solid $sunshine;
+  .name {
+    font-weight: 700px;
+    font-size: 1.5em;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    border: 2px solid $dustyrose;
+    padding: 0.75em 1rem;
+    text-decoration: none;
+    color: $lavender;
+    float: left;
+  }
+
+  nav {
+    float: right;
+    padding-top: 1.1rem;
+    a {
+      color: $lavender;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-size: 2rem;
+    }
+  }
+}

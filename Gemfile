@@ -25,7 +25,7 @@ gem 'jquery-rails'
 gem 'bootstrap-sass', '~> 3.3.6'
 # Use Devise for authentication
 gem 'devise', '~> 4.2'
-
+gem 'normalize-rails', '~> 4.1', '>= 4.1.1'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
