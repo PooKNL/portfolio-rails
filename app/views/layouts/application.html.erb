@@ -3,10 +3,14 @@
   <head>
     <title>Portfolio</title>
     <%= csrf_meta_tags %>
-
+    <link href="stylesheets/application.scss" type="text/scss" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+    <script src="https://use.fontawesome.com/3b8b2287af.js"></script>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+
+  <%= render 'shared/navbar' %>
 
   <body>
     <p class="notice"><%= notice %></p>
@@ -14,4 +18,7 @@
 
     <%= yield %>
   </body>
+
+  <%= render 'shared/footer' %>
+
 </html>
