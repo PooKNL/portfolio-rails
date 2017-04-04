@@ -1,0 +1,29 @@
+$aqua: #6BBAA7;
+$sunshine: #FBA100;
+$lavender: #6C648B;
+$dustyrose: #B6A19E;
+
+#posts_wrapper {
+  padding: 3em 0;
+  .post {
+    text-align: center;
+    .date {
+      font-size: .9em;
+    }
+    h2 {
+      margin: 0;
+      font-size: 2em;
+      text-transform: uppercase;
+      a {
+        text-decoration: none;
+        color: $lavender;
+        &:hover {
+          color: $aqua;
+        }
+      }
+    }
+    hr {
+      margin: 3em auto;
+    }
+  }
+}
