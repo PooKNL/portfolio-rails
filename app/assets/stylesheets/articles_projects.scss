@@ -2,6 +2,7 @@ $aqua: #6BBAA7;
 $sunshine: #FBA100;
 $lavender: #6C648B;
 $dustyrose: #B6A19E;
+$white: #FFFFFF;
 
 #posts_wrapper {
   padding: 3em 0;
@@ -24,6 +25,51 @@ $dustyrose: #B6A19E;
     }
     hr {
       margin: 3em auto;
+    }
+  }
+}
+
+// Pagination styling
+
+.pagination:before,
+.pagination:after {
+  content: " ";
+  display: table;
+}
+
+.pagination:after {
+  clear:box;
+}
+
+.pagination {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  a, .previous_page, .current, .next_page {
+    padding: .75em 1em;
+    margin: 0 0.25em;
+    border-radius: .15em;
+    line-height: 20px;
+    text-decoration: none;
+    background: $white;
+    font-weight: 700;
+    font-size: 1em;
+    font-style: normal;
+    color: $lavender;
+    &:hover {
+    background: $sunshine;
+    color: $white;
+    }
+  }
+  .current {
+    background: $sunshine;
+    color: $white;
+  }
+  .disabled {
+    color: #C0C0C0;
+    &:hover {
+    color: #C0C0C0;
+    background: $white;
     }
   }
 }
