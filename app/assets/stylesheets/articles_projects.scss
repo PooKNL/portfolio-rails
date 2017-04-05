@@ -4,7 +4,7 @@ $lavender: #6C648B;
 $dustyrose: #B6A19E;
 $white: #FFFFFF;
 
-#posts_wrapper {
+#articles_wrapper {
   padding: 3em 0;
   .post {
     text-align: center;
@@ -25,6 +25,45 @@ $white: #FFFFFF;
     }
     hr {
       margin: 3em auto;
+    }
+  }
+}
+
+// Posts show styling
+
+#article_show_content {
+  header {
+    text-align: center;
+    .date {
+      font-size: .9em;
+      color: $aqua;
+      margin: 0;
+    }
+    h1 {
+    margin: 0;
+    }
+  }
+  hr {
+  margin: 3em auto;
+  }
+}
+
+#share_box {
+  text-align: center;
+  p {
+    padding: 0 0 1em 0;
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $lavender;
+    font-size: .8em;
+  }
+  i {
+    color: $lavender;
+    padding: 1em 1.5em;
+    &:hover {
+      color: $sunshine;
+      cursor: pointer;
     }
   }
 }
