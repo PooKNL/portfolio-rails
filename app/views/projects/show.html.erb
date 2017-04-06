@@ -1,24 +1,9 @@
-<%= @post.title %>
+<%= @project.title %> <br>
+<%= @project.content %>
 
-<!-- # <div id="article_show_content" class="skinny_wrapper wrapper_padding" >
-#   <header>
-#     <p class="date"> Friday april 8th </p>
-#     <h1 id="article title"> Playwall </h1>
-#     <hr>
-#   </header>
-#   <div id="content">
-#     <h1> bladie bla bloe </h1>
-#     <p> Shoreditch affogato offal ethical. Activated charcoal sriracha chartreuse
-#       meditation, brunch edison bulb authentic. Master cleanse jean shorts tousled
-#       pinterest paleo church-key. Kale chips kitsch 8-bit green juice farm-to-table.
-#       La croix 3 wolf moon XOXO, tbh etsy typewriter marfa woke hashtag irony flannel
-#       single-origin coffee 90's quinoa biodiesel. Snackwave roof party leggings,
-#       tumeric forage activated charcoal squid pickled migas cardigan. Chia
-#       chicharrones keffiyeh, iPhone lyft whatever vice tote bag direct trade
-#       single-origin coffee cred raclette. </p>
-#   </div>
-#
-#   <hr> -->
-#
-#
-# </div> -->
+<br>
+<br>
+
+<%= link_to "Edit", edit_project_path(@project), class: "btn btn-default" %>
+<%= link_to "Delete", project_path(@project), method: :delete, data: { confirm: "Are you sure?"},
+ class: "btn btn-default" %>
