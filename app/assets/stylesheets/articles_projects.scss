@@ -181,3 +181,36 @@ $white: #FFFFFF;
     }
   }
 }
+
+.home_pagination {
+  text-align: left;
+  width: 100%;
+  margin: auto;
+  a, .previous_page, .current, .next_page {
+    padding: .5em 0.75em;
+    margin: 0 0.25em;
+    border-radius: .15em;
+    line-height: 20px;
+    text-decoration: none;
+    background: $white;
+    font-weight: 700;
+    font-size: .75em;
+    font-style: normal;
+    color: $lavender;
+    &:hover {
+    background: $sunshine;
+    color: $white;
+    }
+  }
+  .current {
+    background: $sunshine;
+    color: $white;
+  }
+  .disabled {
+    color: #C0C0C0;
+    &:hover {
+    color: #C0C0C0;
+    background: $white;
+    }
+  }
+}

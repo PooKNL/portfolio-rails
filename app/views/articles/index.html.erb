@@ -18,8 +18,8 @@
         as HTML, CSS, Python and Ruby. The process gave me so much joy that I <br>
         applied for a traineeship with Codaisseur to become a junior developer. </p>
       </div>
+
       <div class="col-2 homepage_content">
-        <div id="projects_overview">
           <h2> My Projects </h2>
           <hr>
 
@@ -27,22 +27,17 @@
             <h3><%= link_to project.title, project %> </h3>
             <p class="date"> <%= project.created_at.strftime("%A,%b, %d") %> </p>
           <% end %>
-        </div>
 
-        </div>
-        <div class="pagination_container">
-          <div class="pagination">
+          <div class="home_pagination">
             <span class="previous_page disabled">
             Previous</span>
             <em class="current">1</em>
             <a rel="next" href="#">2</a>
             <a class="next_page" href="#">Next</a>
           </div>
-        </div>
       </div>
 
       <div class="col3 homepage_content">
-        <div id="articles_overview">
           <h2> Blog posts </h2>
           <hr>
 
@@ -50,17 +45,14 @@
             <h3><%= link_to article.title, article %></h3>
             <p class="date"> <%= article.created_at.strftime("%A,%b, %d") %> </p>
           <% end %>
-        </div>
 
-        <div class="pagination_container">
-            <div class="pagination">
+            <div class="home_pagination">
               <span class="previous_page disabled">
               Previous</span>
               <em class="current">1</em>
               <a rel="next" href="#">2</a>
               <a class="next_page" href="#">Next</a>
             </div>
-        </div>
       </div>
     </div>
   </body>
