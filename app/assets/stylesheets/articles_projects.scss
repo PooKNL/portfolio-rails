@@ -6,7 +6,7 @@ $white: #FFFFFF;
 
 #articles_wrapper {
   padding: 3em 0;
-  .post {
+  .article {
     text-align: center;
     .date {
       font-size: .9em;
@@ -29,7 +29,7 @@ $white: #FFFFFF;
   }
 }
 
-// Posts show styling
+// Articles show styling
 
 #article_show_content {
   header {
