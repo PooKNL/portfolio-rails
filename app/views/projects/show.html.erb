@@ -1,9 +1,13 @@
-<%= @project.title %> <br>
-<%= @project.content %>
+<div id="project_show">
+  <%= @project.title %> <br>
+  <%= @project.description %>
+  <%= @project.link %>
 
-<br>
-<br>
 
-<%= link_to "Edit", edit_project_path(@project), class: "btn btn-default" %>
-<%= link_to "Delete", project_path(@project), method: :delete, data: { confirm: "Are you sure?"},
- class: "btn btn-default" %>
+  <br>
+  <br>
+
+  <%= link_to "Edit", edit_project_path(@project), class: "btn btn-default" %>
+  <%= link_to "Delete", project_path(@project), method: :delete, data: { confirm: "Are you sure?"},
+   class: "btn btn-default" %>
+</div>

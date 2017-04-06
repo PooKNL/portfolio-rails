@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-   root to: 'static_pages#index'
-   get "index" => "static_pages#index"
+   root to: 'articles#index'
+   get "index" => "articles#index"
+   get "articles" => "articles#index"
    get "contact" => "static_pages#contact"
 
 
