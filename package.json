@@ -1,5 +1,7 @@
 {
   "name": "portfolio",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "normalize-scss": "^6.0.0"
+  }
 }
