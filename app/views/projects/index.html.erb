@@ -1,26 +1,13 @@
 <h1 id="page_title"> My Projects </h1>
 
 <div id="articles_wrapper" class="skinny_wrapper">
-  <div class="article">
-    <p class="date"> Tuesday the 5th of March 2017 </p>
-    <h2><a href="#">The Playwall</a></h2>
-    <hr>
+  <div class="project_article">
+    <% @projects.each do |project| %>
+      <h3><%= link_to project.title, project %> </h3>
+      <p class="date"> <%= project.created_at.strftime("%A,%b, %d") %> </p>
+      <% end %>
   </div>
-  <div class="article">
-    <p class="date"> Tuesday the 5th of March 2017 </p>
-    <h2><a href="#">Amstercats</a></h2>
-    <hr>
-  </div>
-  <div class="article">
-    <p class="date"> Tuesday the 5th of March 2017 </p>
-    <h2><a href="#">Casal Verde</a></h2>
-    <hr>
-  </div>
-  <div class="article">
-    <p class="date"> Tuesday the 5th of March 2017 </p>
-    <h2><a href="#">Portfolio site</a></h2>
-    <hr>
-  </div>
+
 
   <div class="pagination">
     <span class="previous_page disabled">
