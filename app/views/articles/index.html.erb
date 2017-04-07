@@ -1,67 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Robert Jan Hogerbrugge's Portfolio: Sales Professional going webdevelopment</title>
-  </head>
-  <body>
-    <div class="wrapper wrapper_padding clearfix">
-      <div class="col-1 about homepage_content">
-        <h2> About </h2>
-        <hr>
-        <img id="profile_pic" src="/assets/rj.png" alt="HTML5 Icon" style="width:150px;height:150px;">
-        <p> After 10 awesome years in sales and business development I felt it <br>
-        was time for a change in my career. In a 4 month sabbatical I overthought <br>
-        my career and tried to figure out what gives me joy in life and how I <br>
-        would like to spend the next 10 years of my <a href="#"> life. </a> </p>
+<h1 id="page_title"> My Blog Posts </h1>
 
-        <p> I have spent a month learning the basics of programming languages such <br>
-        as HTML, CSS, Python and Ruby. The process gave me so much joy that I <br>
-        applied for a traineeship with Codaisseur to become a junior developer. </p>
-      </div>
-      <div class="col-2 homepage_content">
-        <div id="projects_overview">
-          <h2> My Projects </h2>
-          <hr>
+<div id="articles_wrapper" class="skinny_wrapper">
+  <div class="article">
+    <p class="date"> Tuesday the 5th of March 2017 </p>
+    <h2><a href="#">My first app</a></h2>
+    <hr>
+  </div>
+  <div class="article">
+    <p class="date"> Tuesday the 5th of March 2017 </p>
+    <h2><a href="#">Coding is hard, but fun!</a></h2>
+    <hr>
+  </div>
+  <div class="article">
+    <p class="date"> Tuesday the 5th of March 2017 </p>
+    <h2><a href="#">React, Feathers FTW!</a></h2>
+    <hr>
+  </div>
+  <div class="article">
+    <p class="date"> Tuesday the 5th of March 2017 </p>
+    <h2><a href="#">Back to Rails!</a></h2>
+    <hr>
+  </div>
 
-          <% @projects.each do |project| %>
-            <h3><%= link_to project.title, project %> </h3>
-            <p class="date"> <%= project.created_at.strftime("%A,%b, %d") %> </p>
-          <% end %>
-        </div>
+  <div class="pagination">
+    <span class="previous_page disabled">
+    Previous</span>
+    <em class="current">1</em>
+    <a rel="next" href="#">2</a>
+    <a class="next_page" href="#">Next</a>
+  </div>
 
-        </div>
-        <div class="pagination_container">
-          <div class="pagination">
-            <span class="previous_page disabled">
-            Previous</span>
-            <em class="current">1</em>
-            <a rel="next" href="#">2</a>
-            <a class="next_page" href="#">Next</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col3 homepage_content">
-        <div id="articles_overview">
-          <h2> Blog posts </h2>
-          <hr>
-
-          <% @articles.each do |article| %>
-            <h3><%= link_to article.title, article %></h3>
-            <p class="date"> <%= article.created_at.strftime("%A,%b, %d") %> </p>
-          <% end %>
-        </div>
-
-        <div class="pagination_container">
-            <div class="pagination">
-              <span class="previous_page disabled">
-              Previous</span>
-              <em class="current">1</em>
-              <a rel="next" href="#">2</a>
-              <a class="next_page" href="#">Next</a>
-            </div>
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
+</div>

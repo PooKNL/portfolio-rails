@@ -1,10 +1,8 @@
 class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :destroy, :update]
-  before_action :set_project, only: [:show, :edit, :destroy, :update]
 
   def index
      @articles = Article.all.paginate(:page => params[:page], :per_page => 6).order("created_at desc")
-     @projects = Project.all.paginate(:page => params[:page], :per_page => 6).order("created_at desc")
   end
 
   def show

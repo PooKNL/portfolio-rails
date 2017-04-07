@@ -1,6 +1,5 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import "normalize";
 @import "welcome";
 @import "articles_projects.scss";
 
@@ -127,6 +126,7 @@ p, ul, ol, {
     font-size: .9em;
     margin: 0;
   }
+
   nav {
     float: right;
     i {
