@@ -1,5 +1,6 @@
 class ProjectsController < ApplicationController
   before_action :set_project, only: [:show, :edit, :destroy, :update]
+  before_action :authenticate_user!, except: [:show, :index]
 
   def index
     @projects = Project.all.paginate(:page => params[:page], :per_page => 6)
