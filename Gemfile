@@ -5,7 +5,6 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.0.beta1'
 # Use postgresql as the database for Active Record
@@ -14,15 +13,15 @@ gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
 gem 'sass-rails', github: "rails/sass-rails"
-
+# Paginate the projects/articles when there are a lot of them.
 gem 'will_paginate', '~> 3.1', '>= 3.1.5'
-
+# for contactform
+gem 'mail_form', '~> 1.6'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 gem 'jquery-rails'
-
 # Use Bootstrap for styling
 gem 'bootstrap-sass', '~> 3.3.6'
 # Use Devise for authentication
