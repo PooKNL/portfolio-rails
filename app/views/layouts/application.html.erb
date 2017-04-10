@@ -13,9 +13,12 @@
   <%= render 'shared/navbar' %>
 
   <body>
+  <% if notice %>
     <p class="notice"><%= notice %></p>
+  <% elsif alert %>
     <p class="alert"><%= alert %></p>
-
+  <% end %>
+  
     <%= yield %>
   </body>
 
