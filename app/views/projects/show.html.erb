@@ -1,5 +1,5 @@
 <div id="project_show">
-  <%= @project.title %> <br>
+  <h2> <%= @project.title %> </h2><br>
   <%= @project.description %>
   <%= @project.link %>
 
@@ -7,7 +7,9 @@
   <br>
   <br>
 
-  <%= link_to "Edit", edit_project_path(@project), class: "btn btn-default" %>
-  <%= link_to "Delete", project_path(@project), method: :delete, data: { confirm: "Are you sure?"},
-   class: "btn btn-default" %>
+  <% if user_signed_in? %>
+   <div id="admin_links"></div>
+     <%= link_to "Edit project", edit_project_path(@project), class: "button" %>
+     <%= link_to "Delete project", project_path(@project), method: :delete, data: { confirm: "Are you sure?" }, class: "button" %>
+  <% end %>
 </div>

@@ -6,9 +6,11 @@
   <br>
   <br>
 
-  <%= link_to "Edit", edit_article_path(@article), class: "button" %>
-  <%= link_to "Delete", article_path(@article), method: :delete, data: { confirm: "Are you sure?"},
-   class: "button" %>
+   <% if user_signed_in? %>
+    <div id="admin_links"></div>
+      <%= link_to "Edit article", edit_article_path(@article), class: "button" %>
+      <%= link_to "Delete article", article_path(@article), method: :delete, data: { confirm: "Are you sure?" }, class: "button" %>
+   <% end %>
 
    <br>
    <br>
