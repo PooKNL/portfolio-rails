@@ -46,6 +46,8 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails', '~> 3.5', '>= 3.5.2'
   gem 'selenium-webdriver'
+  gem 'factory_girl', '~> 4.5'
+  gem 'faker', '~> 1.6', '>= 1.6.3'
 end
 
 group :development do
