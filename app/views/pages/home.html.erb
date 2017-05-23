@@ -7,21 +7,28 @@
     <div class="wrapper wrapper_padding clearfix">
       <div class="col-1 about homepage_content">
         <h2> About </h2>
-        <hr>
-        <img id="profile_pic" src="/assets/rj.png" alt="HTML5 Icon" style="width:150px;height:150px;">
-        <p> After 10 awesome years in sales and business development I felt it <br>
-        was time for a change in my career. In a 4 month sabbatical I overthought <br>
-        my career and tried to figure out what gives me joy in life and how I <br>
-        would like to spend the next 10 years of my <a href="#"> life. </a> </p>
-
-        <p> I have spent a month learning the basics of programming languages such <br>
-        as HTML, CSS, Python and Ruby. The process gave me so much joy that I <br>
-        applied for a traineeship with Codaisseur to become a junior developer. </p>
+          <img id="profile_pic" src="/assets/rj.png" alt="HTML5 Icon" style="width:150px;height:150px;">
+          <div class="intro-text">
+            <p> I am an experienced business developer who has turned to the web development side.
+            after 10 succesful years in sales consultancy and business development I underwent
+            the Codaisseur web development traineeship and succeeded. </p>
+            <p>I work with libraries and frameworks such as Ruby on Rails, React and Node.JS </p>
+          </div>
+          <div class="opp-icons">
+            <h3> * Available for new opportunities * </h3>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/robert-jan-hogerbrugge-38ab3a9/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              <a href="https://github.com/PooKNL"><i class="fa fa-github" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div class="contact-me">
+              <%= link_to "Contact me", new_contact_path %>
+            </div>
+          </div>
       </div>
 
       <div class="col-2 homepage_content">
           <h2> My Projects </h2>
-          <hr>
 
           <% @projects.each do |project| %>
             <h3><%= link_to project.title, project %> </h3>
@@ -39,7 +46,6 @@
 
       <div class="col3 homepage_content">
           <h2> Blog posts </h2>
-          <hr>
 
           <% @articles.each do |article| %>
             <h3><%= link_to article.title, article %></h3>
