@@ -9,19 +9,23 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
-  <%= render 'shared/navbar' %>
-
   <body>
-  <% if notice %>
-    <p class="notice"><%= notice %></p>
-  <% elsif alert %>
-    <p class="alert"><%= alert %></p>
-  <% end %>
-  
-    <%= yield %>
+    <div class="site">
+      <div class="content-1">
+        <%= render 'shared/navbar' %>
+      </div>
+      <div class="content-2">
+          <% if notice %>
+            <p class="notice"><%= notice %></p>
+          <% elsif alert %>
+            <p class="alert"><%= alert %></p>
+          <% end %>
+
+          <%= yield %>
+      </div>
+      <div class=content-3>
+        <%= render 'shared/footer' %>
+      </div>
+    </div>
   </body>
-
-  <%= render 'shared/footer' %>
-
 </html>
