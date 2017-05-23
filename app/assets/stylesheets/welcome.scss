@@ -7,11 +7,17 @@ $dustyrose: #B6A19E;
 }
 
 .col-1 {
-  width: 45%;
+  width: 50%;
   padding: 0 5% 0 2.5%;
   float: left;
   p {
-    font-size: 1.35em;
+    font-size: 1.25em;
+    color: white;
+  }
+  a {
+    font-size: 2em;
+    padding: .5em;
+    color: $aqua;
   }
 }
 
@@ -24,14 +30,16 @@ $dustyrose: #B6A19E;
 
 .homepage_content {
   h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-transform: uppercase;
+    color: $lavender;
   }
 
   h3 {
     font-size: 1.35em;
-    font-weight: 400;
-    margin-bottom: .5em;
+    font-weight: 700;
+    color: $sunshine;
+    text-align: center;
   }
 
   a {
@@ -41,7 +49,21 @@ $dustyrose: #B6A19E;
       color: $aqua;
     }
   }
-
+  div.opp-icons {
+    margin-top: 1em
+  }
+  div.social-icons {
+    text-align: center;
+  }
+  div.intro-text {
+    margin-bottom: 3rem;
+    font-size: 1.2em;
+  }
+  div.contact-me {
+    text-align: center;
+    margin-top: 2.5em;
+    font-size: 1.5em;
+  }
   .date {
     font-size: 1em;
     margin-bottom: 2em;
@@ -56,8 +78,22 @@ $dustyrose: #B6A19E;
 .about {
   padding: 0 7.5% 0 0;
   a {
-    color: $aqua;
+    color: $sunshine;
     font-weight: 700;
     text-decoration: none;
   }
+}
+
+#profile_pic {
+  margin: 0 0 1.5em 0;
+  border: solid;
+  border-color: $sunshine;
+}
+
+#page_title {
+  font-weight: 800;
+  text-align: center;
+  padding: 1.5em 0;
+  font-size: 2.5rem;
+  text-transform: uppercase;
 }

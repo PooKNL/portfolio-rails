@@ -12,14 +12,49 @@ $dustyrose: #B6A19E;
   box-sizing: border-box;
 }
 
-div.site {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+body {
+  font-family: sans-serif;
 }
 
-div.content-1, div.content-2, div.content-3 {
+div.background-image {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: url(Amsterdam4.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+div.site {
+  display: flex;
+  min-height: 110vh;
+  flex-direction: column;
+  z-index: 9999;
+}
+
+div.content-1 {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.content-3 {
   flex: 1;
+  color: white;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.content-2 {
+  flex: 1;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid $sunshine;
+  background-color: #404040;
 }
 
 .clearfix:before,
@@ -36,10 +71,6 @@ div.content-1, div.content-2, div.content-3 {
   display: none;
 }
 
-body {
-  background-color: white;
-  font-family: sans-serif;
-}
 
 h1, h2, h3, h4, h5, h6, p, ul, li {
   color: $lavender;
@@ -99,13 +130,12 @@ p, ul, ol, {
 }
 
 .wrapper_padding {
-  padding: 4em 0;
+  padding: 9em 0;
 }
 
 #main_navigation {
-  padding: 1.5em 5%;
+  padding: 1.5em 2.5%;
   font-family: 'Archivo Black', sans-serif;
-  border-bottom: 1px solid $sunshine;
   .name {
     font-weight: 700px;
     font-size: 1.5em;
@@ -114,39 +144,42 @@ p, ul, ol, {
     border: 2px solid $dustyrose;
     padding: 0.75em 1rem;
     text-decoration: none;
-    color: $lavender;
+    color: $sunshine;
     float: left;
   }
-
-  nav {
+  nav.nav-links {
     float: right;
     padding-top: 1.1rem;
-    a {
-      color: $lavender;
-      text-decoration: none;
-      margin: 0 1rem;
-      font-size: 2rem;
-    }
+    padding-right: .5em;
+  }
+  a {
+    color: $sunshine;
+    font-size: 1.5em;
+    font-weight: bold;
   }
 }
 
 #main_footer {
-  position: relative;
   padding: 2.5em 5%;
-  border-top: 1px solid $sunshine;
   margin-top: auto;
   .copyright {
-    float: left;
-    font-size: .9em;
+    float: right;
+    font-size: 1.4em;
     margin: 0;
   }
-
+  a {
+    font-size: 2em;
+  }
+  p {
+    font-size: 2em;
+    color: $sunshine;
+  }
   nav {
     float: right;
     i {
-      color: $lavender;
       margin-left: 1em;
       padding-top: .2em;
+      color: $sunshine;
       &:hover{
         color: $aqua;
       }
@@ -181,18 +214,4 @@ input[type="submit"], .button {
     color: $sunshine;
   }
 
-}
-
-#profile_pic {
-  margin: 0 0 1.5em 0;
-  border: solid;
-  border-color: $aqua;
-}
-
-#page_title {
-  font-weight: 800;
-  text-align: center;
-  padding: 1.5em 0;
-  font-size: 2.5rem;
-  text-transform: uppercase;
 }
