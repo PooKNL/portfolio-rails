@@ -1,6 +1,8 @@
 <div id="article_show">
   <h1>  <%= @article.title %> </h1> <br>
-  <p>  <%= @article.content %> </p>
+    <div id="content_opacity">
+      <p>  <%= @article.content %> </p>
+    </div>
   <p class="date"> <%= @article.created_at %> </p>
 
   <br>

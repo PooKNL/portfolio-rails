@@ -1,6 +1,8 @@
 <div id="project_show">
   <h2> <%= @project.title %> </h2><br>
-  <%= @project.description %>
+    <div id="content_project">
+      <p>  <%= @project.description %> </p>
+    </div>
   <%= @project.link %>
 
   <% if user_signed_in? %>

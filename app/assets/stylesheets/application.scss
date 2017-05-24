@@ -23,7 +23,7 @@ div.background-image {
   top: 0;
   left: 0;
   z-index: -1;
-  background: url(Background1.jpg) no-repeat center center fixed;
+  background: url(Background4.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -149,11 +149,11 @@ p, ul, ol, {
   nav.nav-links {
     float: right;
     padding-top: 1.1rem;
-    padding-right: .5em;
   }
   a {
     color: $sunshine;
     font-size: 1.5em;
+    padding: 0 .5em;
   }
 }
 
