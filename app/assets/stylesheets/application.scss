@@ -23,7 +23,7 @@ div.background-image {
   top: 0;
   left: 0;
   z-index: -1;
-  background: url(Amsterdam4.jpg) no-repeat center center fixed;
+  background: url(Background1.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -53,8 +53,7 @@ div.content-2 {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  border: 2px solid $sunshine;
-  background-color: #404040;
+
 }
 
 .clearfix:before,
@@ -130,7 +129,7 @@ p, ul, ol, {
 }
 
 .wrapper_padding {
-  padding: 9em 0;
+  padding: 8em 0;
 }
 
 #main_navigation {
@@ -155,7 +154,6 @@ p, ul, ol, {
   a {
     color: $sunshine;
     font-size: 1.5em;
-    font-weight: bold;
   }
 }
 

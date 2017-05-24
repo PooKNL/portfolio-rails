@@ -12,7 +12,6 @@ $dustyrose: #B6A19E;
   float: left;
   p {
     font-size: 1.25em;
-    color: white;
   }
   a {
     font-size: 2em;
@@ -49,20 +48,27 @@ $dustyrose: #B6A19E;
       color: $aqua;
     }
   }
+
   div.opp-icons {
     margin-top: 1em
   }
   div.social-icons {
     text-align: center;
+    font-size: 2em;
   }
   div.intro-text {
     margin-bottom: 3rem;
+    color: white;
+    padding: 1.5em;
     font-size: 1.2em;
+    background: rgba(255,255,255,.75);
+    font-weight: 400;
+    border: 2px solid $sunshine;
   }
   div.contact-me {
-    text-align: center;
+    text-align: left;
     margin-top: 2.5em;
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   .date {
     font-size: 1em;
