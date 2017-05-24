@@ -1,0 +1,10 @@
+@-ms-viewport {
+  width: device-width;
+}
+
+@import "reset";
+@import "smallest";
+
+@media pint {
+  @import "print";
+}
