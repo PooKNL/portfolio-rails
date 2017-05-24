@@ -3,6 +3,7 @@
   <nav class="nav-links">
     <%= link_to "My blog", articles_path %>
     <%= link_to "Projects", projects_path %>
+    <%= link_to "Contact me", new_contact_path %>
     <% if user_signed_in? %>
       <%= link_to "Sign out", destroy_us_session_path, method: :delete %>
       <% end %>
