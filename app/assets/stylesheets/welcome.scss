@@ -25,7 +25,6 @@ $dustyrose: #B6A19E;
 
   .col-2 {
     width: 22.5%;
-    padding: 0 2.5%;
     flex-basis: 30%;
     margin-left: 1em;
     margin-top: 3em;
@@ -36,10 +35,12 @@ $dustyrose: #B6A19E;
 
   .col-3 {
     width: 22.5%;
-    padding: 0 2.5%;
     flex-basis: 30%;
     margin-left: 1em;
     margin-top: 3em;
+    a {
+      float: left;
+    }
   }
 }
 
@@ -121,6 +122,7 @@ $dustyrose: #B6A19E;
     border-radius: 5%;
     box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.125);
   }
+
   div.contact-me {
     text-align: left;
     margin-top: 2.5em;
@@ -147,6 +149,7 @@ $dustyrose: #B6A19E;
 }
 
 #blog_project-title {
+  margin-top: 2em;
   margin-bottom: 1em;
   float: left;
 }
