@@ -29,7 +29,8 @@
             <h2 id="project_blog_header"> My Projects </h2>
 
             <% @projects.each do |project| %>
-              <h3><%= link_to project.title, project %> </h3>
+              <h3 id="blog_project_title"><%= link_to project.title, project %> </h3>
+              <br>
               <p class="date"> <%= project.created_at.strftime("%A,%b, %d") %> </p>
             <% end %>
 
@@ -46,7 +47,8 @@
             <h2 id="project_blog_header"> Blog posts </h2>
 
             <% @articles.each do |article| %>
-              <h3><%= link_to article.title, article %></h3>
+              <h3 id="blog_project_title"><%= link_to article.title, article %></h3>
+              <br>
               <p class="date"> <%= article.created_at.strftime("%A,%b, %d") %> </p>
             <% end %>
 

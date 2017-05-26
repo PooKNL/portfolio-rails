@@ -39,6 +39,7 @@ div.content-1 {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 3em;
 }
 
 div.content-3 {
@@ -119,7 +120,6 @@ p, ul, ol, {
 }
 
 .wrapper {
-  width: 90%;
   margin: 0 auto;
 }
 
@@ -129,11 +129,10 @@ p, ul, ol, {
   margin: 0 auto;
 }
 
-.wrapper_padding {
-  padding: 8em 0;
-}
-
 @media (min-width: 40em) {
+  .wrapper_padding {
+    padding: 2em 0;
+  }
   #main_navigation {
     padding: 1.5em 2.5%;
     font-family: 'Archivo Black', sans-serif;
@@ -147,10 +146,13 @@ p, ul, ol, {
       text-decoration: none;
       color: $sunshine;
       float: left;
+      margin-bottom: 1.5em;
+      text-align: center;
+      box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.125);
     }
     nav.nav-links {
-      float: right;
       padding-top: 1.1rem;
+      text-align: center;
     }
     a {
       color: $sunshine;
@@ -160,7 +162,7 @@ p, ul, ol, {
   }
 
   #main_footer {
-    padding: 2.5em 5%;
+    padding: 1.5em 5%;
     margin-top: auto;
     .copyright {
       float: right;
@@ -189,6 +191,9 @@ p, ul, ol, {
 }
 
 @media (max-width: 40em) {
+  .wrapper_padding {
+    padding: 2em 0;
+  }
   #main_navigation {
     padding: 1.5em 2.5%;
     font-family: 'Archivo Black', sans-serif;
@@ -202,12 +207,10 @@ p, ul, ol, {
       text-decoration: none;
       color: $lavender;
       float: left;
-      margin-bottom: 1.5em;
-      text-align: center;
     }
     nav.nav-links {
+      float: right;
       padding-top: 1.1rem;
-      text-align: center;
     }
     a {
       color: $sunshine;
@@ -244,6 +247,8 @@ p, ul, ol, {
     }
   }
 }
+
+
 input[type="text"], input[type="email"], textarea {
   width: 100%;
   max-width: 100%;
