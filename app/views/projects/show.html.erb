@@ -1,9 +1,9 @@
 <div id="project_show">
-  <h2> <%= @project.title %> </h2><br>
+  <h1> <%= @project.title %> </h1><br>
     <div id="content_project">
       <p>  <%= @project.description %> </p>
     </div>
-  <%= @project.link %>
+  <h2> Project url: </h2> <a href="<%= @project.link %>"><i class="fa fa-github" aria-hidden="true"></i></a>
 
   <% if user_signed_in? %>
    <div id="admin_links"></div>
