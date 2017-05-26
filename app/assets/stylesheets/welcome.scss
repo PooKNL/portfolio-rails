@@ -67,7 +67,6 @@ $dustyrose: #B6A19E;
   .col-2 {
     flex: 1;
     padding: 0 2.5%;
-    margin-left: 1em;
     margin-top: 3em;
     a {
       text-align: left;
@@ -77,7 +76,6 @@ $dustyrose: #B6A19E;
   .col-3 {
     flex: 1;
     padding: 0 2.5%;
-    margin-left: 1em;
     margin-top: 3em;
   }
 }
@@ -148,10 +146,10 @@ $dustyrose: #B6A19E;
   }
 }
 
-#blog_project-title {
-  margin-top: 2em;
-  margin-bottom: 1em;
-  float: left;
+#blog_project_title {
+  margin-top: 1.5em;
+  margin-bottom: .5em;
+  text-align: left;
 }
 
 #project_blog_header {
