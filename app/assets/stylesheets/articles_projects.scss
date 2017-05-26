@@ -7,10 +7,18 @@ $white: #FFFFFF;
 .project_article {
   margin-bottom: 5em;
   text-align: center;
+  .date {
+    color: $aqua;
+    font-size: .9em;
+  }
+  h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
 }
 
 #articles_wrapper {
-  padding: 3em 0;
+  padding: 1.5em 0;
   .article {
     text-align: center;
     .date {
@@ -60,14 +68,14 @@ $white: #FFFFFF;
   color: $lavender;
   h1 {
     weight: bolder;
-    font-size: 2em;
+    font-size: 3em;
   }
   hr {
   margin: 3em auto;
   }
   .date {
     font-size: 1.2em;
-    color: $sunshine;
+    color: $aqua;
     margin: 0;
   }
 }
@@ -222,68 +230,138 @@ $white: #FFFFFF;
     clear:box;
   }
 
-  .pagination {
-    text-align: center;
-    width: 100%;
-    margin: auto;
-    a, .previous_page, .current, .next_page {
-      padding: .75em 1em;
-      margin: 0 0.25em;
-      border-radius: .15em;
-      line-height: 20px;
-      text-decoration: none;
-      background: $white;
-      font-weight: 700;
-      font-size: 1em;
-      font-style: normal;
-      color: $lavender;
-      &:hover {
-      background: $sunshine;
-      color: $white;
+@media (max-width: 40em) {
+    .pagination {
+      text-align: center;
+      width: 100%;
+      margin: auto;
+      a, .previous_page, .current, .next_page {
+        padding: .75em 1em;
+        margin: 0 0.25em;
+        border-radius: .15em;
+        line-height: 20px;
+        text-decoration: none;
+        background: $white;
+        font-weight: 700;
+        font-size: .5em;
+        font-style: normal;
+        color: $lavender;
+        &:hover {
+        background: $sunshine;
+        color: $white;
+        }
+      }
+      .current {
+        background: $sunshine;
+        color: $white;
+      }
+      .disabled {
+        color: #C0C0C0;
+        &:hover {
+        color: #C0C0C0;
+        background: $white;
+        }
       }
     }
-    .current {
-      background: $sunshine;
-      color: $white;
-    }
-    .disabled {
-      color: #C0C0C0;
-      &:hover {
-      color: #C0C0C0;
-      background: $white;
+
+    .home_pagination {
+      text-align: left;
+      width: 100%;
+      margin: auto;
+      a, .previous_page, .current, .next_page {
+        padding: .5em 0.75em;
+        margin: 0 0.25em;
+        border-radius: .15em;
+        line-height: 20px;
+        text-decoration: none;
+        background: $white;
+        font-weight: 700;
+        font-size: .75em;
+        font-style: normal;
+        color: $lavender;
+        &:hover {
+        background: $sunshine;
+        color: $white;
+        }
+      }
+      .current {
+        background: $sunshine;
+        color: $white;
+      }
+      .disabled {
+        color: #C0C0C0;
+        &:hover {
+        color: #C0C0C0;
+        background: $white;
+        }
       }
     }
   }
 
-  .home_pagination {
-    text-align: left;
-    width: 100%;
-    margin: auto;
-    a, .previous_page, .current, .next_page {
-      padding: .5em 0.75em;
-      margin: 0 0.25em;
-      border-radius: .15em;
-      line-height: 20px;
-      text-decoration: none;
-      background: $white;
-      font-weight: 700;
-      font-size: .75em;
-      font-style: normal;
-      color: $lavender;
-      &:hover {
-      background: $sunshine;
-      color: $white;
+  @media (min-width: 40em) {
+      .pagination {
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        a, .previous_page, .current, .next_page {
+          padding: .75em 1em;
+          margin: 0 0.25em;
+          border-radius: .15em;
+          line-height: 20px;
+          text-decoration: none;
+          background: $white;
+          font-weight: 700;
+          font-size: 1em;
+          font-style: normal;
+          color: $lavender;
+          &:hover {
+          background: $sunshine;
+          color: $white;
+          }
+        }
+        .current {
+          background: $sunshine;
+          color: $white;
+        }
+        .disabled {
+          color: #C0C0C0;
+          &:hover {
+          color: #C0C0C0;
+          background: $white;
+          }
+        }
+      }
+
+      .home_pagination {
+        width: 100%;
+        margin: auto;
+        a, .previous_page, .current, .next_page {
+          float: left;
+          padding: .5em 0.75em;
+          margin: 0 0.25em;
+          border-radius: .15em;
+          line-height: 20px;
+          text-decoration: none;
+          background: $white;
+          font-weight: 700;
+          font-size: 1em;
+          font-style: normal;
+          color: $lavender;
+          &:hover {
+          background: $sunshine;
+          color: $white;
+          }
+        }
+        .current {
+          background: $sunshine;
+          color: $white;
+        }
+        .disabled {
+          color: #C0C0C0;
+          &:hover {
+          color: #C0C0C0;
+          background: $white;
+          }
+        }
       }
     }
-    .current {
-      background: $sunshine;
-      color: $white;
-    }
-    .disabled {
-      color: #C0C0C0;
-      &:hover {
-      color: #C0C0C0;
-      background: $white;
-      }
-    }
-  }
