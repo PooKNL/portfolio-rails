@@ -80,6 +80,17 @@ $dustyrose: #B6A19E;
   }
 }
 
+.projects-articles-overview {
+  border: 2px solid $sunshine;
+  background: rgba(255,255,255,.5);
+  border-radius: 5%;
+  width: 45%;
+  height: 20%;
+  text-align: center;
+  padding: .35em;
+  margin-bottom: 2em;
+}
+
 .homepage_content {
   h2 {
     font-size: 3rem;
@@ -154,6 +165,8 @@ $dustyrose: #B6A19E;
 
 #project_blog_header {
   margin-bottom: 1em;
+  color: $sunshine;
+  font-weight: bold;
 }
 
 #profile_pic {
@@ -165,6 +178,7 @@ $dustyrose: #B6A19E;
 
 #page_title {
   font-weight: 800;
+  color: $sunshine;
   text-align: center;
   padding: 1.5em 0;
   font-size: 2.5rem;
