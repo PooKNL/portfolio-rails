@@ -8,16 +8,12 @@
   <br>
   <br>
 
-   <% if user_signed_in? %>
-    <div id="admin_links"></div>
+  <% if user_signed_in? %>
+    <div id="admin_links">
       <%= link_to "Edit article", edit_article_path(@article), class: "button" %>
       <%= link_to "Delete article", article_path(@article), method: :delete, data: { confirm: "Are you sure?" }, class: "button" %>
-   <% end %>
-
-   <br>
-   <br>
-   <br>
-   <hr>
+    </div>
+  <% end %>
 
   <div id="article_share">
      <h2> Share <%= @article.title %> ! :) </h2>

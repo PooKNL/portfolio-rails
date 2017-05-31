@@ -7,6 +7,7 @@ $aqua: #6BBAA7;
 $sunshine: #FBA100;
 $lavender: #6C648B;
 $dustyrose: #B6A19E;
+$blue: #337ab7;
 
 
 * {
@@ -186,6 +187,7 @@ p, ul, ol, {
     p {
       font-size: 2em;
       color: $sunshine;
+      font-weight: bolder;
     }
     nav {
       float: right;

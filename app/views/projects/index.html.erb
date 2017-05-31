@@ -5,6 +5,7 @@
     <% @projects.each do |project| %>
       <h3><%= link_to project.title, project %> </h3>
       <p class="date"> <%= project.created_at.strftime("%A,%b, %d") %> </p>
+      <hr>
       <% end %>
   </div>
 

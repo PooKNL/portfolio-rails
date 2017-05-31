@@ -3,7 +3,7 @@ class ProjectsController < ApplicationController
   before_action :authenticate_user!, except: [:show, :index]
 
   def index
-    @projects = Project.all.paginate(:page => params[:page], :per_page => 6)
+    @projects = Project.all.paginate(:page => params[:page], :per_page => 3)
   end
 
   def show

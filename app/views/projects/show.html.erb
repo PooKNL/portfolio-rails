@@ -3,11 +3,12 @@
     <div id="content_project">
       <p>  <%= @project.description %> </p>
     </div>
-  <h2> Project url: </h2> <a href="<%= @project.link %>"><i class="fa fa-github" aria-hidden="true"></i></a>
+     <a class="icon" href="<%= @project.link %>"><i class="fa fa-github" aria-hidden="true"></i></a>
 
   <% if user_signed_in? %>
-   <div id="admin_links"></div>
+   <div id="admin_links">
      <%= link_to "Edit project", edit_project_path(@project), class: "button" %>
      <%= link_to "Delete project", project_path(@project), method: :delete, data: { confirm: "Are you sure?" }, class: "button" %>
+   </div>
   <% end %>
 </div>
