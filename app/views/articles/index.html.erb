@@ -5,16 +5,8 @@
     <% @articles.each do |article| %>
       <h3><%= link_to article.title, article %> </h3>
       <p class="date"> <%= article.created_at.strftime("%A,%b, %d") %> </p>
-      <hr>
       <% end %>
   </div>
-
-  <div class="pagination">
-    <span class="previous_page disabled">
-    Previous</span>
-    <em class="current">1</em>
-    <a rel="next" href="#">2</a>
-    <a class="next_page" href="#">Next</a>
-  </div>
-
 </div>
+
+<%= will_paginate @articles %>
