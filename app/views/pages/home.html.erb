@@ -14,7 +14,8 @@
             <p> An experienced business developer who has turned to the web development side.
             after 10 succesful years in sales I underwent the Codaisseur web development
             traineeship and succeeded. </p>
-            <p>I work with libraries and frameworks such as Ruby on Rails, React and Node.JS. </p>
+            <p>I work with libraries and frameworks such as Ruby on Rails, React and Node.JS. To view my
+            full stack go to the LinkedIn or GitHub account below. </p>
           </div>
           <div class="opp-icons">
             <div class="social-icons">
@@ -26,7 +27,7 @@
       </div>
 
         <div class="col-2 homepage_content">
-            <h2 id="project_blog_header"> My Projects </h2>
+            <h2 id="project_blog_header"> Recent Projects </h2>
 
               <% @projects.each do |project| %>
                 <div class="project-article-style">
@@ -35,18 +36,10 @@
                   <p class="date"> <%= project.created_at.strftime("%A,%b, %d") %> </p>
                 </div>
               <% end %>
-
-            <div class="home_pagination">
-              <span class="previous_page disabled">
-              Previous</span>
-              <em class="current">1</em>
-              <a rel="next" href="#">2</a>
-              <a class="next_page" href="#">Next</a>
-            </div>
         </div>
 
         <div class="col-3 homepage_content">
-            <h2 id="project_blog_header"> Blog posts </h2>
+            <h2 id="project_blog_header"> Recent Posts </h2>
               <% @articles.each do |article| %>
               <div class="project-article-style">
                   <h3 class="project-article-title"><%= link_to article.title, article %></h3>
@@ -55,13 +48,6 @@
               </div>
               <% end %>
 
-              <div class="home_pagination">
-                <span class="previous_page disabled">
-                Previous</span>
-                <em class="current">1</em>
-                <a rel="next" href="#">2</a>
-                <a class="next_page" href="#">Next</a>
-              </div>
         </div>
       </div>
     </div>
