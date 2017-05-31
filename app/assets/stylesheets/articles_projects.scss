@@ -59,24 +59,41 @@ $white: #FFFFFF;
 #content_opacity {
   background: rgba(255,255,255,.75);
   border-radius: 3%;
+  border: solid 2px $sunshine;
+  padding: 1em;
+  margin-bottom: .5em;
 }
+
+#content_project {
+  background: rgba(255,255,255,.75);
+  border-radius: 3%;
+  border: solid 2px $sunshine;
+  padding: 1em;
+  margin-bottom: .5em;
+}
+
 #article_show {
-  width: 80%;
-  text-align: center;
-  max-width: 960px;
+  width: 50%;
+  height: auto;
   margin: 7em auto 6em auto;
   color: $lavender;
   h1 {
     weight: bolder;
     font-size: 3em;
+    text-align: center;
   }
   hr {
   margin: 3em auto;
   }
   .date {
-    font-size: 1.2em;
-    color: $aqua;
+    font-size: 1.5em;
+    color: $blue;
     margin: 0;
+    text-align: center;
+    font-weight: bold;
+  }
+  p {
+    text-align: left;
   }
 }
 
@@ -98,14 +115,15 @@ $white: #FFFFFF;
     margin: 0;
     font-weight: 700;
     text-transform: uppercase;
-    color: $lavender;
+    color: $sunshine;
     font-size: .8em;
   }
   i {
-    color: $lavender;
+    color: $sunshine;
     padding: 1em 1.5em;
+    font-size: 2.5em;
     &:hover {
-      color: $sunshine;
+      color: $lavender;
       cursor: pointer;
     }
   }
@@ -163,13 +181,13 @@ $white: #FFFFFF;
     hr {
     margin: 3em auto;
     }
-    a {
-      font-size: 3em;
-    }
     .date {
       font-size: .9em;
       color: $aqua;
       margin: 0;
+    }
+    .icon {
+      font-size: 3em;
     }
   }
 }

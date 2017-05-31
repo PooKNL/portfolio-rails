@@ -3,7 +3,7 @@ class ArticlesController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
 
   def index
-     @articles = Article.all.paginate(:page => params[:page], :per_page => 6).order("created_at desc")
+     @articles = Article.all.paginate(:page => params[:page], :per_page => 3).order("created_at desc")
   end
 
   def show
